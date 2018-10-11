@@ -11,15 +11,16 @@
 	<link rel="stylesheet" href="/css/nav_style.css">
 
 	<!--end stylesheets -->
-
+</head>
+<body>
 	<!--add wrapper divs as needed-->
 
 	{% include header.html %}
-	{% include nav.html %}
+	<div class="navbarspace">{% include nav.html %}</div>
 
-	{{ content }}
+	<div class="contentspace">{{ content }}<div>
 
-	{% include footer.html %}
+	<div class="footerspace">{% include footer.html %}</div>
 
 	<!-- start scripts
 	  <script type="text/javascript" src=""></script>

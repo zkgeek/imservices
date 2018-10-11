@@ -1,15 +1,3 @@
-/*****************Branding elements for site****************/
-
-:root {
-  --font1: 'DIN2014-Bold';
-  --font2: 'DIN2014-Light';
-  --color1: #122c34;
-  --color2: #224870;
-  --color3: #ebeef4;
-
-  margin: 0px;
-  padding: 0px;
-}
 
 /************ Logo styling here*************/
 .logo {
