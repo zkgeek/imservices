@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,11 +7,10 @@
 	<title> {{ page.title }}</title>
 	<!-- favicon <link rel="icon" href="" type="image/x-icon"> -->
 
-	<!-- stylesheets 
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	end stylesheets -->
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="/css/nav_style.css">
+
+	<!--end stylesheets -->
 
 	<!--add wrapper divs as needed-->
 
@@ -22,11 +21,11 @@
 
 	{% include footer.html %}
 
-	<!-- start scripts 
+	<!-- start scripts
 	  <script type="text/javascript" src=""></script>
 	  end scripts -->
 
-	<!-- can use liquid logic at any point for elements that may appear on some but not all pages, for example if a certain page needs a javascript file that other pages don't need, we could include it with 
+	<!-- can use liquid logic at any point for elements that may appear on some but not all pages, for example if a certain page needs a javascript file that other pages don't need, we could include it with
 
 	 {% if page.custom_js %}
       {% for js_file in page.custom_js %}
@@ -34,12 +33,12 @@
       {% endfor %}
     {% endif %}
 
-    then on the page that needs that js file, the frontmatter would look something like:  
+    then on the page that needs that js file, the frontmatter would look something like:
 
     ---
     title: IM Services
     layout: default
-    custom_js: myscript 
+    custom_js: myscript
     ---
 
 -->
