@@ -1,0 +1,93 @@
+/*****************Branding elements for site****************/
+
+:root {
+  --font1: 'DIN2014-Bold';
+  --font2: 'DIN2014-Light';
+  --color1: #122c34;
+  --color2: #224870;
+  --color3: #ebeef4;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+/************ Logo styling here*************/
+.logo {
+  width: 90px;
+  fill: var(--color3);
+  padding: 10px;
+}
+.st0{font-family:'DIN2014-Bold';}
+.st1{font-size:207px;}
+.st2{font-family:'DIN2014-Light';}
+.st3{font-size:60px;}
+
+/*********** header styling is here**************/
+nav {
+  background-color: var(--color1);
+  display: grid;
+grid-template-columns: 20px auto 1fr auto 20px;
+align-items: center;
+ position: fixed;
+  width: 100%;
+}
+
+nav .logo {
+grid-column: 2 / 3
+}
+
+.navbar {
+  margin: 0;
+    padding: 0;
+list-style: none;
+grid-column: 4 / 5;
+}
+
+.navbar li {
+display: inline;
+padding: 15px;
+}
+
+.navbar li a {
+font-family: var(--font2);
+color: var(--color3);
+text-decoration: none;
+font-size: 1.3em
+}
+
+@media only screen and (max-width: 992px){
+  .navbar li a {
+  font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  nav {
+  grid-template-columns: 20px 1fr 20px;
+grid-template-rows: auto auto;
+  align-items: center;
+  }
+
+  nav .logo {
+  width: 80px;
+  justify-self: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  }
+
+  .navbar {
+  justify-self: center;
+  grid-column: 2 / 3;
+grid-row: 2 / 3;
+padding: 5px;
+  }
+
+  .navbar li {
+  display: inline;
+  padding: 10px;
+  }
+
+  .navbar li a {
+  font-size: 1em
+  }
+}
