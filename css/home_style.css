@@ -144,3 +144,48 @@ align-items: center;
 .funding {
   grid-area: fund;
 }
+
+/***********************staff styling****************/
+.staff-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.staff-member{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-member img {
+  width: 250px;
+}
+
+.staff-member h4 {
+  font-family: var(--font1);
+  color: var(--color1);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.staff-email a {
+  font-family: var(--font2);
+  color: var(--color1);
+  font-weight: 300;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.staff-about {
+  font-family: var(--font2);
+  color: var(--color1);
+  font-weight: 300;
+  font-size: 1.1em;
+
+}
