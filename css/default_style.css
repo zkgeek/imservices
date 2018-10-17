@@ -1,8 +1,8 @@
 /*****************Branding elements for site****************/
 
 :root {
-  --font1: 'DIN2014-Bold';
-  --font2: 'DIN2014-Light';
+  --font1: 'Raleway', sans-serif;
+  --font2: 'Montserrat', sans-serif;
   --color1: #122c34;
   --color2: #224870;
   --color3: #ebeef4;
@@ -11,8 +11,42 @@
   padding: 0px;
 }
 
-/***** Grid spacing for default pages ******/
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
- grid-template-columns: ;
- grid-template-rows: auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+/***** Grid spacing for default pages ******/
+.navbarspace {
+  grid-row: 1 / 2;
+}
+.contentspace {
+  grid-row: 2 / 3;
+}
+
+.footerspace {
+  grid-row: 3 / 4;
+}
+
+/*********** Styling for titles and text ************/
+
+h2 {
+  font-family: var(--font1);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color1);
+  font-size: 2em;
+  text-align: center;
+  padding: 20px;
+}
+
+.text {
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--color1)
 }
