@@ -50,3 +50,8 @@ h2 {
   font-size: 1em;
   color: var(--color1)
 }
+
+.lead {
+  font-size: 1.8em;
+  line-height: 1.7em;
+}
