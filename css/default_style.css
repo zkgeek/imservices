@@ -32,7 +32,27 @@ body {
   grid-row: 3 / 4;
 }
 
+.pagespace {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.pagetext {
+  grid-column: 2 / 3;
+}
+
 /*********** Styling for titles and text ************/
+
+h1 {
+  font-family: var(--font1);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color1);
+  line-height: 2em;
+  font-size: 3em;
+  margin-top: 1em;
+
+}
 
 h2 {
   font-family: var(--font1);
@@ -42,6 +62,14 @@ h2 {
   font-size: 2em;
   text-align: center;
   padding: 20px;
+}
+
+h3 {
+  font-family: var(--font1);
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 2em;
+  margin-top: 1em;
 }
 
 .text {
@@ -54,4 +82,12 @@ h2 {
 .lead {
   font-size: 1.8em;
   line-height: 1.7em;
+}
+
+p, li {
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: var(--color1)
 }
