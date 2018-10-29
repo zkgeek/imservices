@@ -3,10 +3,10 @@
 background:
 /* top, transparent, faked with gradient */
     linear-gradient(
-      rgba(205, 230, 238, 0.55),
-      rgba(205, 230, 238, 0.55)
+      rgba(205, 230, 238, 0.75),
+      rgba(205, 230, 238, 0.75)
     ),
-    url("https://financialtribune.com/sites/default/files/field/image/17january/11_kd_network_500.jpg");
+    url("../img/server.jpg");
 background-repeat: no-repeat;
 background-position: top;
 background-attachment: fixed;
@@ -23,6 +23,7 @@ grid-template-areas:
 }
 
 .top-picture h1 {
+line-height: normal;
 font-family: var(--font1);
 font-weight: 700;
 color: var(--color1);
@@ -36,7 +37,7 @@ text-transform: uppercase;
 .top-picture h4 {
 font-family: var(--font2);
 color: var(--color1);
-font-weight: 300;
+font-weight: 500;
 font-size: 1.5em;
 grid-area: tagline;
 align-self: start;
@@ -44,9 +45,16 @@ text-align: center;
 
 }
 
-.divider img {
-  width: 100%;
-
+@media only screen and (max-width: 900px){
+.top-picture {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-areas:
+  ". . . ."
+  ". title  ."
+  ". tagline ."
+  ". . . ."
+  }
 }
 
 .about {
@@ -252,12 +260,16 @@ background-color: var(--color1);
   padding-top: 15px;
 }
 
-.staff-email a {
+.staff-email {
   font-family: var(--font2);
   color: var(--color1);
   font-weight: 300;
   font-size: 1.1em;
   font-style: italic;
+}
+
+.staff-email a{
+color: var(--color1);
 }
 
 .staff-about {
